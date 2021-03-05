@@ -1,0 +1,52 @@
+ARA Audio Random Access SDK Installer
+
+This module bundles the ARA API, ARA Library and ARA Examples
+by Celemony Software GmbH as ARA Audio Random Access SDK,
+available under the Apache License 2.0.
+For details, see ARA_API, ARA_Library and ARA_Examples.
+
+
+This module bundles cpp-base64, developed by René Nyffenegger,
+available under the "zlib" license.
+For details, see ARA_Examples/3rdParty/cpp-base64.
+
+This module bundles pugixml, developed by Arseny Kapoulkine,
+available under the "MIT" license.
+For details, see ARA_Examples/3rdParty/pugixml.
+
+This module bundles the AudioFile component of the ICST DSP library,
+extended to read and write iXML data chunks, developed by the
+Zurich University of the Arts, Beat Frei, and Celemony Software GmbH,
+available under the "2-clause BSD" license.
+For details, see ARA_Examples/3rdParty/ICST_AudioFile.
+
+
+This module optionally installs a subset of the VST3 SDK,
+developed by Steinberg Media Technologies GmbH,
+available under the Propritary Steinberg VST3 License or
+alternatively under the General Public License (GPL) Version 3,
+see LICENSE.txt included there.
+
+This module optionally installs the CoreAudio Utility Classes,
+developed by Apple Inc.,
+available under a custom Apple sample code license contained in each
+source file therein.
+
+This module optionally installs the JUCE_ARA fork of the JUCE SDK,
+developed by Raw Material Software Limited and Celemony Software GmbH,
+available under a variety of licenses including the
+General Public License (GPL) Version 3,
+see LICENSE.md included there.
+
+
+THIS SOFTWARE IS PROVIDED BY CELEMONY SOFTWARE GMBH AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL CELEMONY SOFTWARE GMBH AND/OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

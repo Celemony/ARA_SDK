@@ -1,0 +1,9 @@
+[submodule "ARA_API"]
+	path = ARA_API
+	url = https://github.com/Celemony/ARA_API
+[submodule "ARA_Library"]
+	path = ARA_Library
+	url = https://github.com/Celemony/ARA_Library
+[submodule "ARA_Examples"]
+	path = ARA_Examples
+	url = https://github.com/Celemony/ARA_Examples
