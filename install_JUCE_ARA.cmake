@@ -1,4 +1,5 @@
-# CMake script to install the JUCE_ARA repository right next to the script.
+# CMake script to install the JUCE_ARA repository right next to the script,
+# or to a custom location provided via JUCE_ARA_DIR.
 #
 # See README.md and NOTICE.txt for details.
 #
@@ -14,7 +15,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
 if(NOT JUCE_ARA_DIR)
     set(JUCE_ARA_DIR "${CMAKE_CURRENT_LIST_DIR}/JUCE_ARA")
