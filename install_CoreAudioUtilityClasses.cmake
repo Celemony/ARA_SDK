@@ -32,6 +32,9 @@ if(EXISTS "${AUDIOUNIT_SDK_DIR}")
         message(FATAL_ERROR "There already exists a file or folder named '${AUDIOUNIT_SDK_DIR}' but it does not seem to contain the Core Audio Utility Classes.")
     endif()
 else()
+    # Note that a slightly newer vesion of the Audio Unit SDK which might be better suited for
+    # actual plug-ins is mixed into these examples:
+    # https://developer.apple.com/library/archive/samplecode/sc2195/Introduction/Intro.html
     set(CORE_AUDIO_UTILITY_CLASSES_URL "https://developer.apple.com/library/archive/samplecode/CoreAudioUtilityClasses/CoreAudioUtilityClasses.zip")
     if(CMAKE_CURRENT_BINARY_DIR)
         set(CORE_AUDIO_UTILITY_CLASSES_ZIP "${CMAKE_CURRENT_BINARY_DIR}/CoreAudioUtilityClasses.zip")
