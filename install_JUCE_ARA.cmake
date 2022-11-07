@@ -35,6 +35,5 @@ else()
     endif()
 endif()
 
-message(STATUS "Install complete. Run the following command line to create the ARAPluginDemo example project:")
-message(STATUS "    cmake -D JUCE_GLOBAL_ARA_SDK_PATH:PATH="." -H "JUCE_ARA/examples/Plugins/ARAPluginDemo" -B "JUCE_ARA/cmake-build" -G <desired generator for your development environment>
-")
+message(STATUS "Install complete. Now build and launch the Projucer found in '${JUCE_ARA_DIR}/extras/Projucer/Builds',")
+message(STATUS "choose Open Example > Plugins > ARAPluginDemo and export the project for your IDE of choice.")

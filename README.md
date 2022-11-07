@@ -92,18 +92,18 @@ The AAX SDK is not publicly available so there is no install script for it. Inst
 downloaded from Avid after registering with them.
 
 
-## Optional JUCE ARA Integration
+## Optional JUCE ARA Example
 
 In order to provide an example with extensive UI, Celemony has created an [experimental fork](https://github.com/Celemony/JUCE_ARA)
-of the [JUCE framework](https://juce.com) which contains an ARA demo plug-in that allows for studying
-ARA GUI integration both for host and plug-in developers.
-Plug-in developers already using JUCE will find this fork particularly interesting because it drafts
-a potential ARA integration into JUCE that may be used for other plug-ins.
+of the [JUCE framework](https://juce.com) which contains an extended ARA demo plug-in that allows
+for studying ARA GUI integration both for host and plug-in developers.
 
 Note that like some of the Companion APIs, JUCE imposes very different licensing conditions than the
 ARA SDK itself, see its included documentation.
 
-To download and build this optional module run:
+To download this optional module run:
 
     cmake -P install_JUCE_ARA.cmake
-    cmake "JUCE_ARA/examples/Plugins/ARAPluginDemo" -D JUCE_GLOBAL_ARA_SDK_PATH:PATH="." -B "JUCE_ARA/cmake-build" -G <desired generator for your development environment>
+
+Now build and launch the Projucer found in extras/Projucer/Builds,
+choose Open Example > Plugins > ARAPluginDemo and export the project for your IDE of choice.
