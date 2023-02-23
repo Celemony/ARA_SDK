@@ -20,3 +20,6 @@ xcuserdata
 ARTIFACTS
 build
 out
+/vst3sdk
+/AudioUnitSDK
+/JUCE_ARA
