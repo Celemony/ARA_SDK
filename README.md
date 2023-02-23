@@ -64,7 +64,7 @@ scripts for these SDKs are provided as convenience.
 Per default, these scripts will place the SDKs inside the ARA SDK folder, but this can be overridden
 by specifying alternate locations for each SDK, e.g. for VST3 by adding the argument:
 
-    -D ARA_VST3_SDK_DIR:PATH="your/path/to/VST3_SDK"
+    -D ARA_VST3_SDK_DIR:PATH="your/path/to/vst3sdk"
 
 
 ### VST3 SDK
