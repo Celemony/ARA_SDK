@@ -22,4 +22,5 @@ build
 out
 /vst3sdk
 /AudioUnitSDK
+/CLAP
 /JUCE_ARA
