@@ -79,10 +79,10 @@ the ARA examples can be fetched from GitHub via:
 ### Audio Unit SDK
 
 Similar to VST3, you can set ARA_AUDIO_UNIT_SDK_DIR to use an existing local copy of Apple's
-Core Audio Utility Classes.
-They can also be downloaded directly from the [Apple Developer website](https://developer.apple.com/library/archive/samplecode/CoreAudioUtilityClasses/Introduction/Intro.html):
+Audio Unit SDK (former Core Audio Utility Classes).
+They can also be downloaded directly from the [Apple github page](https://github.com/apple/AudioUnitSDK):
 
-    cmake -P install_CoreAudioUtilityClasses.cmake
+    cmake -P install_AudioUnitSDK.cmake
 
 ### AAX SDK
 

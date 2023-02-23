@@ -22,7 +22,7 @@ if(NOT APPLE)
 endif()
 
 if(NOT AUDIOUNIT_SDK_DIR)
-    set(AUDIOUNIT_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/CoreAudioUtilityClasses")
+    set(AUDIOUNIT_SDK_DIR "${CMAKE_CURRENT_LIST_DIR}/AudioUnitSDK")
 endif()
 
 if(EXISTS "${AUDIOUNIT_SDK_DIR}")
@@ -32,30 +32,9 @@ if(EXISTS "${AUDIOUNIT_SDK_DIR}")
         message(FATAL_ERROR "There already exists a file or folder named '${AUDIOUNIT_SDK_DIR}' but it does not seem to contain the Core Audio Utility Classes.")
     endif()
 else()
-    # Note that a slightly newer vesion of the Audio Unit SDK which might be better suited for
-    # actual plug-ins is mixed into these examples:
-    # https://developer.apple.com/library/archive/samplecode/sc2195/Introduction/Intro.html
-    set(CORE_AUDIO_UTILITY_CLASSES_URL "https://developer.apple.com/library/archive/samplecode/CoreAudioUtilityClasses/CoreAudioUtilityClasses.zip")
-    if(CMAKE_CURRENT_BINARY_DIR)
-        set(CORE_AUDIO_UTILITY_CLASSES_ZIP "${CMAKE_CURRENT_BINARY_DIR}/CoreAudioUtilityClasses.zip")
-    else()
-        set(CORE_AUDIO_UTILITY_CLASSES_ZIP "${CMAKE_CURRENT_LIST_DIR}/CoreAudioUtilityClasses.zip")
-    endif()
-
-    if(NOT EXISTS "${CORE_AUDIO_UTILITY_CLASSES_ZIP}")
-        message(STATUS "Downloading Core Audio Utility Classes...")
-        file(DOWNLOAD "${CORE_AUDIO_UTILITY_CLASSES_URL}" "${CORE_AUDIO_UTILITY_CLASSES_ZIP}" SHOW_PROGRESS TIMEOUT 30)
-    endif()
-
-    if(NOT EXISTS "${CORE_AUDIO_UTILITY_CLASSES_ZIP}")
-        message(FATAL_ERROR "Failed to download Core Audio Utility Classes from '${CORE_AUDIO_UTILITY_CLASSES_URL}'.")
-    endif()
-
-    message(STATUS "Extracting Core Audio Utility Classes...")
-    file(ARCHIVE_EXTRACT INPUT "${CORE_AUDIO_UTILITY_CLASSES_ZIP}" DESTINATION "${AUDIOUNIT_SDK_DIR}/..")
-    file(REMOVE "${CORE_AUDIO_UTILITY_CLASSES_ZIP}")
-
-    if(NOT EXISTS "${AUDIOUNIT_SDK_DIR}")
-        message(FATAL_ERROR "Failed to extract Core Audio Utility Classes from downloaded '${CORE_AUDIO_UTILITY_CLASSES_ZIP}'.")
+    message(STATUS "Cloning AudioUnitSDK to '${AUDIOUNIT_SDK_DIR}'...")
+    execute_process(COMMAND git clone --depth=1 --shallow-submodules --single-branch --progress --branch AudioUnitSDK-1.0.0 https://github.com/apple/AudioUnitSDK "${AUDIOUNIT_SDK_DIR}" RESULT_VARIABLE result)
+    if(result)
+        message(FATAL_ERROR "Cloning repository failed: ${result}")
     endif()
 endif()
