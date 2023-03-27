@@ -37,7 +37,7 @@ The `ARA_API` module contains the core headers that define the actual ARA C API.
 `ARAInterface.h` is the main header, accompanied by a set of auxiliary headers for integrating ARA with
 each of the supported Companion APIs like `VST3` or `Audio Units`. Additionally, ARA Audio File Chunks
 are defined in `ARAAudioFileChunks.h`.
-It includes extensive printer-friendly [documentation](ARA_API/ARA_API.pdf).
+It includes extensive printer-friendly [documentation](https://github.com/Celemony/ARA_API/blob/main/ARA_API.pdf).
 
 ### ARA Library
 
