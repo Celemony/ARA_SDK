@@ -14,7 +14,7 @@ between plug-in and host, upon which both host and plug-ins can build numerous a
 
 This Software Development Kit allows digital audio workstation (DAW) plug-in and host developers to
 implement and utilize ARA enabled plug-ins.
-It is copyright (c) 2012-2023, [Celemony Software GmbH](https://www.celemony.com), and published under
+It is copyright (c) 2012-2024, [Celemony Software GmbH](https://www.celemony.com), and published under
 the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 Any public release of ARA-enabled software should be based on a tagged public release of the ARA API.
