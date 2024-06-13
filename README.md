@@ -4,8 +4,8 @@
 
 ARA Audio Random Access is an extension for established plug-in standard APIs such as
 [`VST3`](https://github.com/steinbergmedia/vst3sdk),
-[`Audio Units`](https://developer.apple.com/documentation/audiotoolbox) or
-[`CLAP`](https://cleveraudio.org/) to allow for a
+[`Audio Units`](https://developer.apple.com/documentation/audiotoolbox),
+[`AAX`](https://developer.avid.com/aax/) or [`CLAP`](https://cleveraudio.org/) to allow for a
 much-improved DAW integration of plug-ins like Celemony's Melodyne which are conceptually
 closer to a sample editor than to a conventional realtime audio processor.
 It enables plug-ins to read audio samples from the DAW host at will, allowing them to implement more
@@ -36,7 +36,7 @@ After cloning this top level module, you need to fetch these submodules, e.g. by
 
 The `ARA_API` module contains the core headers that define the actual ARA C API.
 `ARAInterface.h` is the main header, accompanied by a set of auxiliary headers for integrating ARA with
-each of the supported Companion APIs like `VST3` or `Audio Units`. Additionally, ARA Audio File Chunks
+each of the supported companion APIs like `VST3` or `Audio Units`. Additionally, ARA Audio File Chunks
 are defined in `ARAAudioFileChunks.h`.
 It includes extensive printer-friendly [documentation](ARA_API/ARA_API.pdf).
 
@@ -58,9 +58,9 @@ Note that some of the examples rely on external dependencies, see separate
 ## Companion APIs
 
 Building ARA-enabled products relies on using at least one of the various established plug-in standard
-APIs as "Companion API" to ARA. Note that each of the Companion APIs comes with its own specific licensing
+APIs as "companion API" to ARA. Note that each of the companion APIs comes with its own specific licensing
 conditions, as detailed in each SDK - some of these terms differ substantially from ARA's licensing conditions.
-The Companion APIs are therefore not installed automatically. However where applicable, optional install
+The companion APIs are therefore not installed automatically. However where applicable, optional install
 scripts for these SDKs are provided as convenience.
 Per default, these scripts will place the SDKs inside the ARA SDK folder, but this can be overridden
 by specifying alternate locations for each SDK, e.g. for VST3 by adding the argument:
@@ -94,10 +94,8 @@ can be downloaded directly from the [CLAP github page](https://github.com/free-a
 
 ### AAX SDK
 
-To use AAX, set the variable ARA_AAX_SDK_DIR to your local copy of the AAX SDK when generating the
-ARA example projects.
-The AAX SDK is not publicly available so there is no install script for it. Instead, it must be manually
-downloaded from Avid after registering with them.
+The ARA AAX integration is an optional part of the AAX SDK and not included here. The AAX SDK can be
+downloaded from Avid after registering with them, see [Avid's developer site](https://developer.avid.com/aax/).
 
 
 ## Optional JUCE ARA Example
@@ -106,7 +104,7 @@ In order to provide an example with extensive UI, Celemony has created an [exper
 of the [JUCE framework](https://juce.com) which contains an extended ARA demo plug-in that allows
 for studying ARA GUI integration both for host and plug-in developers.
 
-Note that like some of the Companion APIs, JUCE imposes very different licensing conditions than the
+Note that like some of the companion APIs, JUCE imposes very different licensing conditions than the
 ARA SDK itself, see its included documentation.
 
 To download this optional module run:
