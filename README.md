@@ -3,8 +3,9 @@
 ## About ARA and the ARA SDK
 
 ARA Audio Random Access is an extension for established plug-in standard APIs such as
-[`VST3`](https://github.com/steinbergmedia/vst3sdk) and
-[`Audio Units`](https://developer.apple.com/documentation/audiotoolbox) to allow for a
+[`VST3`](https://github.com/steinbergmedia/vst3sdk),
+[`Audio Units`](https://developer.apple.com/documentation/audiotoolbox) or
+[`CLAP`](https://cleveraudio.org/) to allow for a
 much-improved DAW integration of plug-ins like Celemony's Melodyne which are conceptually
 closer to a sample editor than to a conventional realtime audio processor.
 It enables plug-ins to read audio samples from the DAW host at will, allowing them to implement more
@@ -83,6 +84,13 @@ Audio Unit SDK (former Core Audio Utility Classes).
 They can also be downloaded directly from the [Apple github page](https://github.com/apple/AudioUnitSDK):
 
     cmake -P install_AudioUnitSDK.cmake
+
+### CLAP SDK
+
+Similar to VST3, you can set ARA_CLAP_SDK_DIR to use an existing local copy of the CLAP SDK, which
+can be downloaded directly from the [CLAP github page](https://github.com/free-audio/clap):
+
+    cmake -P install_CLAP.cmake
 
 ### AAX SDK
 
