@@ -18,9 +18,10 @@ implement and utilize ARA enabled plug-ins.
 It is copyright (c) 2012-2025, [Celemony Software GmbH](https://www.celemony.com), and published under
 the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Any public release of ARA-enabled software should be based on a tagged public release of the ARA API.
-If temporarily using HEAD to study current work-in-progress, keep in mind that in order to achieve a
-concise long-term change history, any changes since the last tagged release may eventually be rebased.
+Any public release of ARA-enabled software should be based on a tagged public release of the ARA SDK.
+The "main" branch of this repository always points to the latest public release.
+If temporarily using the "develop" branch to study current work-in-progress, keep in mind that in order
+to achieve a concise long-term change history, any changes on that branch may eventually be rebased.
 
 
 ## ARA SDK Submodules
