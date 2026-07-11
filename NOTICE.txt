@@ -20,6 +20,10 @@ Zurich University of the Arts, Beat Frei, and Celemony Software GmbH,
 available under the "2-clause BSD" license.
 For details, see ARA_Examples/3rdParty/ICST_AudioFile.
 
+This product bundles midifile, developed by Craig Stuart Sapp,
+which is available under the "2-clause BSD" license.
+For details, see ARA_Examples/3rdParty/midifile.
+
 
 This module optionally installs a subset of the VST3 SDK,
 developed by Steinberg Media Technologies GmbH,
